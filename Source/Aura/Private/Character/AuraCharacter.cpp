@@ -5,6 +5,7 @@
 
 #include "AbilitySystemComponent.h"
 #include "AbilitySystem/AuraAbilitySystemComponent.h"
+#include "Chaos/Deformable/ChaosDeformableCollisionsProxy.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Player/AuraPlayerController.h"
 #include "Player/AuraPlayerState.h"
@@ -36,6 +37,11 @@ void AAuraCharacter::OnRep_PlayerState()
 
 	// Init ability actor info for the client
 	InitAbilityActorInfo();
+}
+
+int32 AAuraCharacter::GetLevel()
+{
+	return 3;
 }
 
 void AAuraCharacter::InitAbilityActorInfo()
