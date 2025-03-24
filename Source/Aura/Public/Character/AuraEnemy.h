@@ -23,7 +23,7 @@ public:
 	virtual void UnHighlightActor() override;
 	/** end Enemy Interface */
 	/* Combat Interface */
-	virtual int32 GetLevel() override;
+	virtual int32 GetPlayerLevel() override;
 	/* End Combat Interface */
 protected:
 	virtual void BeginPlay() override;
